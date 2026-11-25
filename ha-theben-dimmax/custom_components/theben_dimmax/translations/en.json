@@ -1,0 +1,49 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Theben DimMax BLE Mesh Setup",
+        "description": "Choose how to add your Theben DimMax 540 dimmer.",
+        "data": {
+          "method": "Setup method"
+        }
+      },
+      "manual": {
+        "title": "Manual Configuration",
+        "description": "Enter the mesh configuration manually. Find these values in your Theben app project export.",
+        "data": {
+          "device_address": "BLE MAC Address (e.g. AA:BB:CC:DD:EE:FF)",
+          "netkey": "Network Key (32 hex characters)",
+          "appkey": "Application Key (32 hex characters)",
+          "provisioner_addr": "Provisioner Address (usually 1)",
+          "dimmer_addr": "Dimmer Unicast Address (usually 2)",
+          "iv_index": "IV Index (usually 0)",
+          "netkey_index": "NetKey Index (usually 0)",
+          "appkey_index": "AppKey Index (usually 0)",
+          "seq": "Sequence Number (start value, e.g. 800)",
+          "ttl": "TTL (default 8)"
+        }
+      },
+      "import": {
+        "title": "Import from Theben App",
+        "description": "Paste the entire JSON content from your Theben app project export file.",
+        "data": {
+          "export_json": "Project Export JSON"
+        }
+      },
+      "select_device": {
+        "title": "Select Device",
+        "description": "Multiple devices found in the export. Select which one to add.",
+        "data": {
+          "device": "Device"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the dimmer via BLE",
+      "invalid_config": "Invalid mesh configuration",
+      "invalid_export": "Could not parse the project export JSON",
+      "no_devices": "No dimmer devices found in the export"
+    }
+  }
+}
