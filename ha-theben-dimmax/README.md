@@ -1,18 +1,18 @@
-# Theben DimMax 540 for Home Assistant
+# Theben DIMAX 540 for Home Assistant
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz/docs/faq/custom_repositories)
 [![Validate](https://github.com/bigideaslaw/ha-theben-dimmax/actions/workflows/validate.yml/badge.svg)](https://github.com/bigideaslaw/ha-theben-dimmax/actions/workflows/validate.yml)
 
-Local Bluetooth Mesh control of **Theben DimMax 540** dimmers from Home Assistant. There's no cloud and no Theben gateway. Home Assistant talks to the mesh directly through its Bluetooth adapter or an ESPHome Bluetooth proxy.
+Local Bluetooth Mesh control of **Theben DIMAX 540** dimmers from Home Assistant. There's no cloud and no Theben gateway. Home Assistant talks to the mesh directly through its Bluetooth adapter or an ESPHome Bluetooth proxy.
 
 > [!WARNING]
-> **Beta.** This integration has been tested on **one DimMax 540** so far. It may not work with other firmware versions or hardware revisions. If you try it, please [send a device report](https://github.com/bigideaslaw/ha-theben-dimmax/issues/new?template=device_report.yml), whether it works or not.
+> **Beta.** This integration has been tested on **one DIMAX 540** so far. It may not work with other firmware versions or hardware revisions. If you try it, please [send a device report](https://github.com/bigideaslaw/ha-theben-dimmax/issues/new?template=device_report.yml), whether it works or not.
 
 ## Features
 
 - **Light** entity with on/off and brightness, one per channel on multi-channel dimmers
 - **Power, voltage, current and temperature** sensors, plus a Min Dim Level sensor. Power is calculated from the dimmer's measured line voltage and output current, the same way the Theben app's Energy Monitor does it.
-- One shared mesh connection serves every DimMax in the same network, so adding more dimmers doesn't add more BLE connections
+- One shared mesh connection serves every DIMAX in the same network, so adding more dimmers doesn't add more BLE connections
 - The mesh sequence number is persisted across restarts so the dimmers don't reject commands as replays
 
 ## Requirements
@@ -46,7 +46,7 @@ Go to **Settings → Devices & services → Add integration → Theben DimMax** 
 
 | Device | Firmware | Integration version | Result | Reported by |
 | --- | --- | --- | --- | --- |
-| DimMax 540 | (add your firmware version) | v2.1.0 | Works | @bigideaslaw |
+| DIMAX 540 | (add your firmware version) | v2.1.0 | Works | @bigideaslaw |
 
 Tried it on your dimmer? [Add your result](https://github.com/bigideaslaw/ha-theben-dimmax/issues/new?template=device_report.yml).
 
@@ -64,7 +64,7 @@ Please include debug logs when opening an [issue](https://github.com/bigideaslaw
 
 ## Disclaimer
 
-This is an independent community project. It is not affiliated with, endorsed by or supported by Theben AG. "Theben" and "DimMax" are trademarks of their respective owner. Use at your own risk.
+This is an independent community project. It is not affiliated with, endorsed by or supported by Theben AG. "Theben" and "DIMAX" are trademarks of their respective owner. Use at your own risk.
 
 ## Credits
 
